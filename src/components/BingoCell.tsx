@@ -11,7 +11,7 @@ const BingoCell = ({ cell, shouldHighlight = false, onClick }: Props) => {
   return (
     <TiltedContainer className="overflow-hidden rounded-md transition-transform duration-300 ease-out">
       <div
-        className={`h-full cursor-pointer flex-1 flex items-center justify-center border text-center border-black p-2 text-xs md:text-sm ${
+        className={`h-full cursor-pointer flex-1 flex items-center justify-center border text-center border-black p-2 text-[9px] md:text-sm ${
           cell.matched
             ? shouldHighlight
               ? "bg-green-300/50 text-white line-through"
