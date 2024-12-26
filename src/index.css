@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 100dvw;
+  overflow-x: hidden;
+}
+
+@layer base {
+  @font-face {
+    font-family: "pixelify-sans";
+    src: url("/fonts/pixelify-sans.ttf") format("truetype");
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: -3px -3px 0 rgba(0, 0, 0, 1);
+  }
+  .blue-gradient {
+    background: linear-gradient(80deg, #62a1ec, #385b86);
+  }
+  .green-gradient {
+    background: linear-gradient(80deg, #00c324, #c7ffd1);
+  }
+}
