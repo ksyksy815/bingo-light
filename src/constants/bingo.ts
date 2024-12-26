@@ -1,5 +1,5 @@
 export const BINGO_ITEMS = [
-  "(🐶🐱🐔 animal noises in the background)",
+  "(animal noises in the background)",
   "Is ______ on the call?",
   "We do have 5 minutes left",
   "Hello, hello?",
@@ -9,7 +9,7 @@ export const BINGO_ITEMS = [
   "Can you email that to everyone?",
   "Can you repeat please?",
   "Sorry, something ______ with my calendar",
-  "(👧👶🏼🧒🏻 child noises in the background)",
+  "(child noises in the background)",
   "Could you share this slides afterwards?",
   "Sorry, I didn't find the conference id",
   "You will send the minutes?",
