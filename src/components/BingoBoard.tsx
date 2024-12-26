@@ -37,7 +37,12 @@ const BingoBoard = () => {
               bingoLinesSet.has(diagonalName);
 
             if (rowIndex === 2 && colIndex === 2) {
-              return <CenterCell key={"center-diamond"} />;
+              return (
+                <CenterCell
+                  key={"center-diamond"}
+                  isCelebrating={isCelebrating}
+                />
+              );
             }
 
             return (
