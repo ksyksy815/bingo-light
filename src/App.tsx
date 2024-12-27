@@ -1,4 +1,4 @@
-import BingoBoard from "./components/BingoBoard";
+import NewBingoBoard from "./components/NewBingoBoard";
 import Title from "./components/Title";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
         className={"h-full flex flex-col w-full md:max-w-screen-md md:mx-auto"}
       >
         <Title />
-        <BingoBoard />
+        <NewBingoBoard />
       </div>
     </main>
   );
