@@ -16,7 +16,7 @@ const TiltedContainer = ({
     const { left, top, width, height } =
       itemRef.current.getBoundingClientRect();
 
-    const relativeX = (e.clientX - left) / width; // 마우스 커서와 카드의 상대적 너
+    const relativeX = (e.clientX - left) / width;
     const relativeY = (e.clientY - top) / height;
 
     const tiltX = (relativeY - 0.5) * 20;

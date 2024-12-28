@@ -1,14 +1,15 @@
 "use client";
 
-import useBingo from "../hooks/useBingo";
 import BingoCell from "./BingoCell";
 import Celebration from "./Celebration";
 import CenterCell from "./CenterCell";
+import useBingo  from "../hooks/useBingo";
 
 const BingoBoard = () => {
   const size = 5;
-  const { cells, isCelebrating, bingoLinesSet, onClickCell } = useBingo(size);
-
+  const { cells, isCelebrating, bingoLinesSet, onClickCell } =
+    useBingo(size);
+console.log('bingoLinesSet:',bingoLinesSet)
   return (
     <div
       className={
@@ -20,15 +21,15 @@ const BingoBoard = () => {
       >
         {cells.map((row, rowIndex) =>
           row.map((cell, colIndex) => {
-            const rowName = `row-${rowIndex}`;
-            const colName = `col-${colIndex}`;
+            const rowName = `r${rowIndex}`;
+            const colName = `c${colIndex}`;
             const shouldCheckDiagonal = rowIndex === colIndex;
             const shouldCheckReverseDiagonal =
               shouldCheckDiagonal || rowIndex === size - colIndex - 1;
             const diagonalName = shouldCheckDiagonal
-              ? "diagonal-1"
+              ? "d1"
               : shouldCheckReverseDiagonal
-              ? "diagonal-2"
+              ? "d2"
               : "";
 
             const shouldHighlight =
