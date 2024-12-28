@@ -12,6 +12,7 @@ export default {
           lightBlue: "#00AAFF",
           foggyBlue: "#3E405F",
           darkBlue: "#1C1C26",
+          foggyDarkBlue: '##2F2E43',
           green: "#129612",
         },
       },

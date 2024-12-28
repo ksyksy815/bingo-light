@@ -18,10 +18,7 @@ body {
   .text-shadow {
     text-shadow: -3px -3px 0 rgba(0, 0, 0, 1);
   }
-  .blue-gradient {
-    background: linear-gradient(80deg, #62a1ec, #385b86);
-  }
-  .green-gradient {
-    background: linear-gradient(80deg, #00c324, #c7ffd1);
+  .title-stroke {
+    -webkit-text-stroke: 3px white;
   }
 }
