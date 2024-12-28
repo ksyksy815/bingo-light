@@ -8,8 +8,8 @@ export default {
       },
       colors: {
         bingo: {
+          red:"#FF4545",
           lightBlue: "#00AAFF",
-          //3968A0
           foggyBlue: "#3E405F",
           darkBlue: "#1C1C26",
           green: "#129612",
