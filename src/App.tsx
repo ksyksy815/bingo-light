@@ -1,23 +1,21 @@
 import { useState } from "react";
 import BingoBoard from "./components/BingoBoard";
-import Title from "./components/Title";
-import GameStartButton from "./components/GameStartButton";
+import GameStart from "./components/GameStart";
 
 function App() {
-  const [startGame, setStartGame] = useState(false);
+  const [hasClicked, setHasClicked] = useState(false);
 
-  const handleClick = () => setStartGame(true);
+  const handleClick = () => setHasClicked(prev => !prev);
 
   return (
     <main className="flex flex-col w-screen h-[100svh] overflow-hidden font-pixelify-sans px-3 pb-[60px] md:py-5 md:px-0 bg-bingo-darkBlue">
       <div
-        className={"h-full flex flex-col w-full md:max-w-screen-md md:mx-auto"}
+        className={"h-full flex flex-col w-full md:max-w-screen-md md:mx-auto justify-center"}
       >
-        <Title />
         {
-          startGame ? <BingoBoard /> : <GameStartButton handleClick={handleClick} />
-        }
-        
+          hasClicked ? (<BingoBoard handleClick={handleClick} /> ) 
+          : (<GameStart handleClick={handleClick} />)
+        }  
       </div>
     </main>
   );
